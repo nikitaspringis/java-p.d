@@ -14,9 +14,10 @@ public class Main {
         int vieni = skaitlis % 10;
 
         int summa = simti + desmitie + vieni;
-        if (summa < 5) System.out.println("Skaitļa ciparu summa ir mazāka par 5");
-        else if (summa > 5) System.out.println("Skaitļa ciparu summa ir lielāka par 5");
-        else System.out.println("Summa ir vienāda ar 5");
+        System.out.println("Skaitļa ciparu summa ir " + summa);
+        if (summa < 5) System.out.println("Tā ir mazāka par 5");
+        else if (summa > 5) System.out.println("Tā ir lielāka par 5");
+        else System.out.println("Tā ir vienāda ar 5");
 
 
     }
