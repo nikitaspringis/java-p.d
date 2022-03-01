@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ievadiet trīsciparu skaitli: ");
+       /* System.out.println("Ievadiet trīsciparu skaitli: ");
         int skaitlis = sc.nextInt();
 
         int simti = skaitlis / 100;
@@ -17,8 +17,22 @@ public class Main {
         System.out.println("Skaitļa ciparu summa ir " + summa);
         if (summa < 5) System.out.println("Tā ir mazāka par 5");
         else if (summa > 5) System.out.println("Tā ir lielāka par 5");
-        else System.out.println("Tā ir vienāda ar 5");
+        else System.out.println("Tā ir vienāda ar 5"); */
 
+        System.out.println("Ievadiet a: ");
+        int a = sc.nextInt();
+        System.out.println("Ievadiet b: ");
+        int b = sc.nextInt();
+
+        if (a / 100 > 0 && b / 100 > 0) {
+            if (b - 2 * a != 0) {
+                double y = (double)(3 * b - 4) / (b - 2 * a);
+                System.out.printf("y = %.2f ", y);
+            }
+            else System.out.println("Aprēķins nav iespējams");
+        }
+        else System.out.println("Ievadītie skaitļi nav trīsciparu skaitli");
 
     }
 }
+
