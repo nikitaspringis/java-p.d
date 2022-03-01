@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet trīsciparu skaitli: ");
+        int skaitlis = sc.nextInt();
+
+        int simti = skaitlis / 100;
+        int desmitie = (skaitlis % 100) / 10;
+        int vieni = skaitlis % 10;
+
+        int summa = simti + desmitie + vieni;
+        if (summa < 5) System.out.println("Skaitļa ciparu summa ir mazāka par 5");
+        else if (summa > 5) System.out.println("Skaitļa ciparu summa ir lielāka par 5");
+        else System.out.println("Summa ir vienāda ar 5");
+
+
+    }
+}
