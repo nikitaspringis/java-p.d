@@ -1,0 +1,44 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       /*System.out.println("Ievadiet pirmo trīsciparu skaitli: ");
+        int skaitlis_1 = sc.nextInt();
+        System.out.println("Ievadiet otro trīsciparu skaitli: ");
+        int skaitlis_2 = sc.nextInt();
+
+        int simti_1 = skaitlis_1 / 100;
+        int desmitie_1 = (skaitlis_1 % 100) / 10;
+        int vieni_1 = skaitlis_1 % 10;
+
+        int simti_2 = skaitlis_2 / 100;
+        int desmitie_2 = (skaitlis_2 % 100) / 10;
+        int vieni_2 = skaitlis_2 % 10;
+
+        int summa_1 = simti_1 + desmitie_1 + vieni_1;
+        int summa_2 = simti_2 + desmitie_2 + vieni_2;
+        System.out.println("Pirma skaitļa ciparu summa ir " + summa_1);
+        System.out.println("Otra skaitļa ciparu summa ir " + summa_2);
+        if (summa_1 > summa_2) System.out.println("Pirmā skaitļa summa ir lielāka");
+        else if (summa_1 < summa_2) System.out.println("Otrā skaitļa summa ir lielāka");
+        else System.out.println("Abu skaitļu ciparu summas ir vienādas");*/
+
+        System.out.println("Ievadiet a: ");
+        int a = sc.nextInt();
+        System.out.println("Ievadiet b: ");
+        int b = sc.nextInt();
+
+        if (a / 100 > 0 && b / 100 > 0) {
+            if (b - 3 * a != 0) {
+                double y = (double)(3 * b + 4) / (b - 3 * a);
+                System.out.printf("y = %.2f ", y);
+            }
+            else System.out.println("Nav iespējams veikt aprēķinu");
+        }
+        else System.out.println("Jūsu skaitļi nav trīsciparu skaitli");
+    }
+}
